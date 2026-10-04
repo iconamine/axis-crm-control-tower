@@ -17,5 +17,5 @@ jobs:
         with:
           node-version: 22
           cache: npm
-      - run: npm ci
+      - run: npm install --include=dev --include=optional --workspaces=false
       - run: npm run build

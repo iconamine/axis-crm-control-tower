@@ -1,7 +1,14 @@
 {
-  "name": "site-creator-vinext-starter",
-  "version": "0.1.0",
+  "name": "axis-crm-control-tower",
+  "version": "1.0.0",
+  "description": "Operational CRM control tower for RUN support, product backlog, UAT and release governance.",
   "private": true,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iconamine/axis-crm-control-tower.git"
+  },
+  "keywords": ["crm", "salesforce", "business-analysis", "uat", "cloudflare-d1", "nextjs"],
   "engines": {
     "node": ">=22.13.0"
   },
