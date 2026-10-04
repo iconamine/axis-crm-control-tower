@@ -1,0 +1,20 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "../vendor/shadcn-tailwind-4.13.0.css";
+
+:root {
+  --background:#07090d; --foreground:#f2f5f7; --card:#0d1117; --card-foreground:#f2f5f7;
+  --popover:#11161d; --popover-foreground:#f2f5f7; --primary:#8ee7ff; --primary-foreground:#061117;
+  --secondary:#171d25; --secondary-foreground:#e4e9ed; --muted:#141a21; --muted-foreground:#8d99a6;
+  --accent:#1c2630; --accent-foreground:#f2f5f7; --destructive:#ff735c; --border:#252d37;
+  --input:#252d37; --ring:#8ee7ff; --radius:.3rem; --sidebar:#090c11; --sidebar-foreground:#dce3e8;
+  --sidebar-primary:#8ee7ff; --sidebar-primary-foreground:#061117; --sidebar-accent:#151c24;
+  --sidebar-accent-foreground:#fff; --sidebar-border:#202731; --sidebar-ring:#8ee7ff;
+}
+*{box-sizing:border-box;border-color:var(--border)}html{background:var(--background);scroll-behavior:smooth}body{margin:0;background:var(--background);color:var(--foreground);font-family:Arial,Helvetica,sans-serif}button,input,select,textarea{font:inherit}button{cursor:pointer}::selection{background:#8ee7ff;color:#071016}::-webkit-scrollbar{width:8px;height:8px}::-webkit-scrollbar-track{background:#090c11}::-webkit-scrollbar-thumb{background:#313a45}
+.axis-grid{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cpath d='M0 0H40M0 0V40' fill='none' stroke='%2317202a' stroke-width='1'/%3E%3C/svg%3E");background-size:40px 40px}
+@keyframes axisPulse{0%,100%{opacity:.28;transform:scale(.82)}50%{opacity:1;transform:scale(1.12)}}
+@keyframes axisScan{0%{transform:translateX(-110%)}100%{transform:translateX(410%)}}
+@keyframes axisRise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+.axis-pulse{animation:axisPulse 2.2s ease-in-out infinite}.axis-scan{animation:axisScan 4.8s linear infinite}.axis-rise{animation:axisRise .55s ease-out both}.axis-number{font-variant-numeric:tabular-nums;font-family:"Courier New",monospace}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important}}
